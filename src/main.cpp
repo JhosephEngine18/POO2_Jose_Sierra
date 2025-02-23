@@ -1,7 +1,7 @@
 /*
 Universidad Amerike
 Author: José Sierra
-Practice#:1
+Practice#:2
 Date: 22/02/25
 Description: This code prints all my personal information including some personal tastes
 */
@@ -9,9 +9,9 @@ Description: This code prints all my personal information including some persona
 #include <iostream>
 using namespace std;
 
-string Name, Job, Origin, Hobby, Food, Music;
 int Age = 17;
 
+//This saves Types of Data
 struct Data
 {
     string Name, Job, Origin, Hobby, Food, Music;
@@ -23,11 +23,12 @@ struct Data2
 };
 
 
-
+//This execute all the messages for the console
 
 void printuser(Data2 message, Data user)
 {
     cout<<message.messageName + user.Name + "\n";
+    cout<< "His age is: " + to_string(Age) + "\n";
     cout<<message.messageJob + user.Job + "\n";
     cout<<message.messageOrigin + user.Origin + "\n";
     cout<<message.messageHobby + user.Hobby + "\n";
@@ -35,6 +36,7 @@ void printuser(Data2 message, Data user)
     cout<<message.messageMusic + user.Music + "\n";
 }
 
+//Here i specify all the values of each variable
 
 int main ()
 {
